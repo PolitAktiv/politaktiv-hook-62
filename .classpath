@@ -13,10 +13,6 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="con" path="com.liferay.ide.eclipse.server.plugin.container/hook">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
+	<classpathentry kind="con" path="com.liferay.ide.eclipse.server.plugin.container/hook"/>
 	<classpathentry kind="output" path="docroot/WEB-INF/classes"/>
 </classpath>

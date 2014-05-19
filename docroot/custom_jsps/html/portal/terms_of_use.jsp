@@ -30,6 +30,9 @@ if (referer.equals(themeDisplay.getPathMain() + "/portal/update_terms_of_use")) 
 	<aui:input name="doAsUserId" type="hidden" value="<%= themeDisplay.getDoAsUserId() %>" />
 	<aui:input name="<%= WebKeys.REFERER %>" type="hidden" value="<%= referer %>" />
 
+<!-- 	Politaktiv change: scroll view in terms of use -->
+	<div style="width:100%; height:400px; overflow-y:scroll;">
+	
 	<c:choose>
 		<c:when test="<%= (PropsValues.TERMS_OF_USE_JOURNAL_ARTICLE_GROUP_ID > 0) && Validator.isNotNull(PropsValues.TERMS_OF_USE_JOURNAL_ARTICLE_ID) %>">
 			<liferay-ui:journal-article articleId="<%= PropsValues.TERMS_OF_USE_JOURNAL_ARTICLE_ID %>" groupId="<%= PropsValues.TERMS_OF_USE_JOURNAL_ARTICLE_GROUP_ID %>" />
@@ -201,7 +204,7 @@ if (referer.equals(themeDisplay.getPathMain() + "/portal/update_terms_of_use")) 
 			</ol>
 		</c:otherwise>
 	</c:choose>
-
+	</div>
 	<c:if test="<%= !user.isAgreedToTermsOfUse() %>">
 		<aui:button-row>
 			<aui:button type="submit" value="i-agree" />
