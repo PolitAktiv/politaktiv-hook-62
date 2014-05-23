@@ -87,7 +87,7 @@
 							</c:choose>
 	
 							<c:if test="<%= PrefsPropsUtil.getBoolean(company.getCompanyId(), PropsKeys.ADMIN_EMAIL_USER_ADDED_ENABLED) %>">
-								<%= LanguageUtil.format(pageContext, "your-password-has-been-sent-to-x", userEmailAddress) %>
+								<%= LanguageUtil.format(pageContext, "pa-your-password-has-been-sent-to-x", userEmailAddress) %>
 							</c:if>
 						</div>
 					</c:when>
