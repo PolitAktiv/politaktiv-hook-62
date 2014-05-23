@@ -76,12 +76,14 @@
 									<%= LanguageUtil.get(pageContext, "thank-you-for-creating-an-account") %>
 	
 									<c:if test="<%= company.isStrangersVerify() %>">
-										<%= LanguageUtil.format(pageContext, "your-email-verification-code-has-been-sent-to-x", userEmailAddress) %>
+										<%= LanguageUtil.format(pageContext, "pa-your-email-verification-code-has-been-sent-to-x", userEmailAddress) %>
 									</c:if>
 								</c:when>
+								<%--
 								<c:otherwise>
 									<%= LanguageUtil.format(pageContext, "thank-you-for-creating-an-account.-your-password-is-x", userPassword, false) %>
 								</c:otherwise>
+								--%>
 							</c:choose>
 	
 							<c:if test="<%= PrefsPropsUtil.getBoolean(company.getCompanyId(), PropsKeys.ADMIN_EMAIL_USER_ADDED_ENABLED) %>">
