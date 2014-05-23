@@ -33,6 +33,7 @@ birthdayCalendar.set(Calendar.YEAR, 1970);
 	<portlet:param name="struts_action" value="/login/create_account" />
 </portlet:actionURL>
 
+<div class="registration-content">
 <aui:form action="<%= createAccountURL %>" method="post" name="fm">
 	<aui:input name="saveLastPath" type="hidden" value="<%= false %>" />
 	<aui:input name="<%= Constants.CMD %>" type="hidden" value="<%= Constants.ADD %>" />
@@ -178,5 +179,12 @@ birthdayCalendar.set(Calendar.YEAR, 1970);
 		<aui:button type="submit" />
 	</aui:button-row>
 </aui:form>
+</div>
 
-<liferay-util:include page="/html/portlet/login/navigation.jsp" />
+<div class="registration-description-article">
+	<liferay-ui:journal-article showTitle="false" groupId="10165" articleId="REGISTRATION_DESCRIPTION"/>
+</div>
+
+<div class="registration-navigation">
+	<liferay-util:include page="/html/portlet/login/navigation.jsp" />
+</div>

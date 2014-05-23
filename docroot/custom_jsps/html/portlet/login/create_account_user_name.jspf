@@ -19,7 +19,5 @@
 <aui:input model="<%= User.class %>" name="middleName" type="hidden"/>
 
 <aui:input model="<%= User.class %>" name="lastName">
-	<c:if test="<%= PrefsPropsUtil.getBoolean(company.getCompanyId(), PropsKeys.USERS_LAST_NAME_REQUIRED, PropsValues.USERS_LAST_NAME_REQUIRED) %>">
-		<aui:validator name="required" />
-	</c:if>
+	<aui:validator name="required" />
 </aui:input>
