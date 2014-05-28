@@ -1,5 +1,5 @@
 ReleaseNotes:
 
-0.1 - 
+0.1 - 28.05.2014
 ----------------
-initial
+initial von 6.1 migriert
