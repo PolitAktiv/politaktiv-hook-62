@@ -1,6 +1,6 @@
 ReleaseNotes:
 
-0.2 - 04.07.2014
+6.2.1.2 - 04.07.2014
 ----------------
 compiler set to 1.6 compat.
 
