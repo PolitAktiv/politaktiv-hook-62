@@ -1,5 +1,10 @@
 ReleaseNotes:
 
+0.2 - 04.07.2014
+----------------
+compiler set to 1.6 compat.
+
+
 0.1 - 28.05.2014
 ----------------
 initial von 6.1 migriert
