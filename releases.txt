@@ -1,5 +1,9 @@
 ReleaseNotes:
 
+6.2.1.2 - 08.10.2014
+----------------
+added easy-participation-button
+
 6.2.1.2 - 04.07.2014
 ----------------
 compiler set to 1.6 compat.
