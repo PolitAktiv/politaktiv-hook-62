@@ -14,5 +14,7 @@
  */
 --%>
 <li id="participationButton" role="presentation">
-	<liferay-portlet:runtime portletName="politaktiveasyparticipation_WAR_politaktiveasyparticipationportlet" />
+ 	<div id="dockbar-extension">
+		<liferay-portlet:runtime portletName="politaktiveasyparticipation_WAR_politaktiveasyparticipationportlet" />
+	</div>
 </li>
