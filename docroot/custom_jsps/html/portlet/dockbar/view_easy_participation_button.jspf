@@ -13,8 +13,25 @@
  * details.
  */
 --%>
+
+<%@page import="java.util.Random"%>
+
+<%
+/*Create random instance-id for Portlet*/
+char[] chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890".toCharArray();
+StringBuilder sb = new StringBuilder();
+Random random = new Random();
+for (int i = 0; i < 12; i++) {
+    char c = chars[random.nextInt(chars.length)];
+    sb.append(c);
+}
+String instance = sb.toString();
+/*append Instance to Portlet*/
+String portletID = "politaktiveasyparticipation_WAR_politaktiveasyparticipationportlet_INSTANCE_" + instance;
+%>
+
 <li id="participationButton" role="presentation">
  	<div id="dockbar-extension">
-		<liferay-portlet:runtime portletName="politaktiveasyparticipation_WAR_politaktiveasyparticipationportlet" />
+		<liferay-portlet:runtime portletName="<%=portletID%>" />
 	</div>
 </li>
