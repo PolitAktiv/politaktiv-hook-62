@@ -1,5 +1,9 @@
 ReleaseNotes:
 
+6.2.1.5 - 04.11.2014
+--------------------
+gave easy-participation-button a random instance ID
+
 6.2.1.4 - 10.10.2014
 --------------------
 added fix for SEO bug: https://jira.intra.politaktiv.org/browse/PA-775
