@@ -1,5 +1,9 @@
 ReleaseNotes:
 
+6.2.1.6 - 26.11.2014
+--------------------
+friendlyURL instead of trackbackURL in Blog-Portlet
+
 6.2.1.5 - 04.11.2014
 --------------------
 gave easy-participation-button a random instance ID
