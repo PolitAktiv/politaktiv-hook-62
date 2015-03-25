@@ -1,5 +1,9 @@
 ReleaseNotes:
 
+6.2.1.8 - 25.03.2015
+--------------------
+little eye-icon next to view count in asset_publisher
+
 6.2.1.8 - 28.11.2014
 --------------------
 merged missing seo push.
